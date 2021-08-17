@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="createUser()">
+    <p>
+        Name
+        <input formControlName="name">
+    </p>
+    
+    <p>
+        Last name
+        <input formControlName="lastName">
+    </p>
+    
+    <button type="submit" mat-raised-button color="primary">Create</button>
+</form>

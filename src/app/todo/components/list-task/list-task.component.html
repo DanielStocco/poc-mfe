@@ -1,0 +1,9 @@
+<mat-selection-list #usersSelector [multiple]="false">
+    <mat-list-option *ngFor="let task of tasks" [value]="task.description">
+        {{task.description}}
+    </mat-list-option>
+</mat-selection-list>
+
+<p>
+    Option selected: {{usersSelector.selectedOptions.selected[0]?.value}}
+</p>
